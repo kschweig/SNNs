@@ -1,0 +1,20 @@
+name: snn_tf1_compat
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.7
+  - pip=21.0.1
+  - numpy=1.20.0
+  - scipy=1.6.0
+  - sympy=1.7.1
+  - scikit-learn=0.24.1
+  - matplotlib=3.3.4
+  - pip:
+      - jupyter
+# CPU mode only
+#  - tensorflow=1.14.0
+# GPU mode
+  - cudatoolkit=10.0
+  - tensorflow-gpu=1.14.0
