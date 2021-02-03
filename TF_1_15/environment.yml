@@ -12,9 +12,9 @@ dependencies:
   - scikit-learn=0.24.1
   - matplotlib=3.3.4
   - pip:
-      - jupyter
-# CPU mode only
-#  - tensorflow=1.14.0
-# GPU mode
+      - jupyter=1.0.0
+# CPU mode only, comment if using gpu mode
+#  - tensorflow=1.15.0
+# GPU mode, take take that your gpu might need a different cudatoolkit!
   - cudatoolkit=10.0
-  - tensorflow-gpu=1.14.0
+  - tensorflow-gpu=1.15.0
