@@ -1,13 +1,12 @@
 # Adapted KERAS tutorial 
 
-
-from __future__ import print_function
-import keras
-from keras.datasets import cifar10
-from keras.preprocessing.image import ImageDataGenerator
-from keras.models import Sequential
-from keras.layers import Dense,AlphaDropout, Dropout, Activation, Flatten
-from keras.layers import Conv2D, MaxPooling2D
+import tensorflow as tf
+import tensorflow.keras as keras
+from tensorflow.keras.datasets import cifar10
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, AlphaDropout, Activation, Flatten
+from tensorflow.keras.layers import Conv2D, MaxPooling2D
 
 
 import os
@@ -16,11 +15,14 @@ import numpy as np
 
 batch_size = 32
 num_classes = 10
-epochs = 200
+epochs = 2
 data_augmentation = True
 num_predictions = 20
 save_dir = os.path.join(os.getcwd(), 'saved_models')
 model_name = 'keras_cifar10_trained_model.h5'
+
+# list devices so you can check whether your gpu is available
+print(tf.config.list_physical_devices())
 
 # The data, shuffled and split between train and test sets:
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()

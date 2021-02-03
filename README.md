@@ -2,9 +2,9 @@
 Tutorials and implementations for "Self-normalizing networks"(SNNs) as suggested by Klambauer et al. ([arXiv pre-print](https://arxiv.org/pdf/1706.02515.pdf)). 
 
 ## Versions
-- Python 3.5 and Tensorflow 1.1
+- see [environment](environment.yml) file for full list of prerequisites. Implementations use Tensorflow > 2.0, but there are compatibility versions for Tensorflow 1.14 found [here](TF_1_14).
 
-## Note for Tensorflow 1.4 users
+## Note for Tensorflow >= 1.4 users
 Tensorflow 1.4 already has the function "tf.nn.selu" and "tf.contrib.nn.alpha_dropout" that implement the SELU activation function and the suggested dropout version. 
 
 ## Tutorials
@@ -15,7 +15,6 @@ Tensorflow 1.4 already has the function "tf.nn.selu" and "tf.contrib.nn.alpha_dr
 ## KERAS CNN scripts:
 - KERAS: Convolutional Neural Network on MNIST ([python script](https://github.com/bioinf-jku/SNNs/blob/master/Keras-CNN/MNIST-Conv-SELU.py))
 - KERAS: Convolutional Neural Network on CIFAR10 ([python script](https://github.com/bioinf-jku/SNNs/blob/master/Keras-CNN/CIFAR10-Conv-SELU.py))
-
 
 ## Design novel SELU functions
 - How to obtain the SELU parameters alpha and lambda for arbitrary fixed points ([notebook](https://github.com/bioinf-jku/SNNs/blob/master/getSELUparameters.ipynb))
