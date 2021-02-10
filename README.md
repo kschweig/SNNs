@@ -2,8 +2,8 @@
 Tutorials and implementations for "Self-normalizing networks"(SNNs) as suggested by Klambauer et al. ([arXiv pre-print](https://arxiv.org/pdf/1706.02515.pdf)). 
 
 ## Versions
-- see [environment](environment.yml) file for full list of prerequisites. Tutorial implementations use Tensorflow > 2.0 (using Keras), but versions for Tensorflow 1.x 
-  users based on the deprecated tf.contrib module are available.
+- see [environment](https://github.com/bioinf-jku/SNNs/blob/master/environment.yml) file for full list of prerequisites. Tutorial implementations use Tensorflow > 2.0 (Keras), but versions for Tensorflow 1.x 
+  users based on the deprecated tf.contrib module (with separate [environment](https://github.com/bioinf-jku/SNNs/blob/master/TF_1_x/environment.yml) file) are available.
 
 #### Note for Tensorflow >= 1.4 users
 Tensorflow >= 1.4 already has the function "tf.nn.selu" and "tf.contrib.nn.alpha_dropout" that implement the SELU activation function and the suggested dropout version. 
