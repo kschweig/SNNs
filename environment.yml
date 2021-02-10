@@ -13,10 +13,6 @@ dependencies:
   - matplotlib=3.3.4
   - pip:
       - jupyter=1.0.0
+    - tensorflow=2.3.0
 # GPU compatibility, check your nvidia drivers to find what toolkit is supported by your GPU
   - cudatoolkit=10.1
-# Imports for Tensorflow versions
-  - tensorflow=2.3.0
-# Imports for Pytorch versions
-#  - pytorch=1.7.1
-#  - torchvision
