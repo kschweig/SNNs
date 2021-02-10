@@ -23,8 +23,8 @@ more information available [here](https://www.tensorflow.org/api_docs/python/tf/
 - Convolutional Neural Network on MNIST ([python script](https://github.com/bioinf-jku/SNNs/blob/master/TF_2_x/MNIST-Conv-SELU.py))
 - Convolutional Neural Network on CIFAR10 ([python script](https://github.com/bioinf-jku/SNNs/blob/master/TF_2_x/CIFAR10-Conv-SELU.py))
 
-## Design novel SELU functions
-- How to obtain the SELU parameters alpha and lambda for arbitrary fixed points ([notebook](https://github.com/bioinf-jku/SNNs/blob/master/getSELUparameters.ipynb))
+## Design novel SELU functions (Tensorflow 1.x)
+- How to obtain the SELU parameters alpha and lambda for arbitrary fixed points ([notebook](https://github.com/bioinf-jku/SNNs/blob/master/TF_1_x/getSELUparameters.ipynb))
 
 ## Basic python functions to implement SNNs (Tensorflow 1.x)
 are provided as code chunks here: [selu.py](https://github.com/bioinf-jku/SNNs/blob/master/TF_1_x/selu.py)
